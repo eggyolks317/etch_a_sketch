@@ -1,0 +1,9 @@
+#gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 512px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
+}
