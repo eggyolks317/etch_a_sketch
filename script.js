@@ -2,6 +2,17 @@ let gridContainer = document.querySelector("#gridContainer");
 let button = document.querySelector("#btn");
 const width = "30px";
 const height = "30px";
+
+//get random integer between 0 and 255
+function randInt() {
+  return Math.floor(Math.random() * 255);
+}
+
+//get random color
+function randColor() {
+  return randInt() + "," + randInt() + "," + randInt();
+}
+
 //adds the grid
 function addGrid(num) {
   for (let i = 0; i < num * num; i++) {
@@ -20,7 +31,7 @@ function addGrid(num) {
 }
 //changes the background color
 function changeBgColor(grid) {
-  grid.style.backgroundColor = "black";
+  grid.style.backgroundColor = `rgb(${randColor()})`;
   grid.classList.add("colored");
 }
 addGrid(16); // adds the grid to the window
@@ -42,5 +53,6 @@ function newGrid() {
     grid.addEventListener("mouseenter", (e) => changeBgColor(e.target));
   });
 }
+
 //set event listner to new grid button
 button.addEventListener("click", () => newGrid());
