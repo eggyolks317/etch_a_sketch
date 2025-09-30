@@ -18,9 +18,9 @@ function addGrid(num) {
   for (let i = 0; i < num * num; i++) {
     let grid = document.createElement("div");
     grid.classList.add("grid");
-    grid.style.border = "1px solid lightgray";
     grid.style.width = 512 / num - 2 + "px";
     grid.style.height = 512 / num - 2 + "px";
+    grid.style.border = "1px solid lightgray";
     gridContainer.appendChild(grid);
   }
   let grids = document.querySelectorAll(".grid");
@@ -32,6 +32,7 @@ function addGrid(num) {
 //changes the background color
 function changeBgColor(grid) {
   grid.style.backgroundColor = `rgb(${randColor()})`;
+  grid.style.opacity = parseFloat(grid.style.opacity || 0) + 0.1;
   grid.classList.add("colored");
 }
 addGrid(16); // adds the grid to the window
