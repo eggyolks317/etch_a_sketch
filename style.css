@@ -1,28 +1,27 @@
 body {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 button {
-    border: solid transparent;
-    border-radius: 5px;
-    background-color: lightblue;
-    padding: 5px;
-    width: 518px;
-    height: 50px;
-    font-family: monospace;
-    font-weight: bolder;
-
+  border: solid transparent;
+  border-radius: 5px;
+  background-color: lightblue;
+  padding: 5px;
+  width: 518px;
+  height: 50px;
+  font-family: monospace;
+  font-weight: bolder;
 }
 #gridContainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 512px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid;
+  display: flex;
+  flex-wrap: wrap;
+  width: 512px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid;
 }
